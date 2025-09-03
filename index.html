@@ -1,14 +1,251 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tejeswar Raju Vempalli — Data Engineer</title>
+  <meta name="description" content="Portfolio of Tejeswar Raju Vempalli — Data Engineer specializing in cloud data platforms (AWS, Azure, GCP), ETL/ELT, and analytics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --bg: #0b1220;
+      --panel: #0f172a;
+      --muted: #94a3b8;
+      --text: #e2e8f0;
+      --accent: #60a5fa;
+      --card: #111827;
+      --chip: #1f2937;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1080px;padding:24px;margin:0 auto}
+    header{position:sticky;top:0;background:linear-gradient(180deg,rgba(11,18,32,.95),rgba(11,18,32,.85));backdrop-filter:blur(8px);border-bottom:1px solid #1f2937;z-index:10}
+    nav{display:flex;gap:16px;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 16px var(--accent)}
+    .brand h1{font-size:16px;margin:0;font-weight:700;letter-spacing:.3px}
+    .navlinks a{color:var(--muted);font-size:14px;margin-left:16px}
+
+    /* hero */
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:48px 0}
+    .hero h2{font-size:40px;line-height:1.15;margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 16px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+    .chip{background:var(--chip);color:#cbd5e1;border:1px solid #243042;padding:6px 10px;border-radius:999px;font-size:12px}
+    .panel{background:var(--panel);border:1px solid #1f2937;border-radius:14px;padding:18px}
+    .cta{display:flex;gap:12px;margin-top:20px}
+    .btn{background:var(--accent);color:#0b1220;border:none;border-radius:12px;padding:10px 14px;font-weight:700}
+    .btn.secondary{background:transparent;border:1px solid #334155;color:#cbd5e1}
+
+    /* section */
+    section{padding:28px 0}
+    .section-title{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+    .section-title h3{margin:0;font-size:22px}
+    .grid{display:grid;gap:16px}
+    @media(min-width:800px){.grid.cols-2{grid-template-columns:1fr 1fr}.grid.cols-3{grid-template-columns:repeat(3,1fr)}}
+
+    /* cards */
+    .card{background:var(--card);border:1px solid #1f2937;border-radius:14px;padding:16px}
+    .card h4{margin:0 0 6px;font-size:18px}
+    .meta{color:var(--muted);font-size:13px;margin-bottom:10px}
+    ul{margin:10px 0 0 18px}
+    li{margin:6px 0}
+
+    /* footer */
+    footer{margin:40px 0 24px;color:var(--muted);font-size:14px}
+    .socials{display:flex;gap:12px;margin-top:10px}
+
+    /* project tags */
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .tag{padding:4px 8px;border:1px solid #243042;border-radius:999px;font-size:12px;color:#cbd5e1;background:#0b1324}
+
+    /* table-like skills */
+    .skills{display:grid;gap:10px}
+    @media(min-width:800px){.skills{grid-template-columns:repeat(3,1fr)}}
+    .skill-card h5{margin:0 0 8px;font-size:14px;color:#cbd5e1}
+    .skill-card p{margin:0;color:#94a3b8;font-size:13px}
+
+    .note{font-size:12px;color:#94a3b8;margin-top:8px}
+    code.inline{background:#0b1324;border:1px solid #243042;border-radius:6px;padding:2px 6px;font-size:12px}
+  </style>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <div class="dot" aria-hidden="true"></div>
+          <h1>Tejeswar Raju Vempalli — Data Engineer</h1>
+        </div>
+        <div class="navlinks">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h2>Cloud & Data Engineer building reliable, scalable data platforms.</h2>
+        <p>5+ years designing end‑to‑end ETL/ELT on AWS, Azure, and GCP; shipping analytics that drive decisions.</p>
+        <div class="chips">
+          <span class="chip">AWS Glue</span>
+          <span class="chip">PySpark</span>
+          <span class="chip">Redshift</span>
+          <span class="chip">Databricks</span>
+          <span class="chip">BigQuery</span>
+          <span class="chip">DBT</span>
+          <span class="chip">Airflow</span>
+          <span class="chip">Power BI</span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn secondary" href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="panel">
+        <strong>Certifications</strong>
+        <ul>
+          <li>Databricks Certified Data Engineer Associate — <a href="https://credentials.databricks.com/e341b927-fa28-4a04-8671-985b2762e94e#acc.ZEkeaxWh" target="_blank" rel="noreferrer">verify</a></li>
+          <li>AWS Certified Solutions Architect – Associate — <a href="https://www.credly.com/badges/f3e5accd-a8be-4215-a938-d12eda17f3fa/public_url" target="_blank" rel="noreferrer">verify</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-title"><h3>About</h3></div>
+      <div class="card">
+        <p>Experienced Data Engineer focused on building robust data pipelines and analytics at scale. I enjoy turning messy source systems into trustworthy, query‑friendly datasets and dashboards. Recent work includes healthcare claims pipelines on AWS with Glue + Lambda + Redshift, plus governance and HIPAA‑aligned controls.</p>
+        <p class="note">Tip: Edit this paragraph with your story, career goals, and impact.
+        <!-- TODO: Personalize this text further. -->
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-title"><h3>Projects</h3></div>
+      <div class="grid cols-2">
+        <article class="card">
+          <h4>Healthcare Claims ETL on AWS</h4>
+          <div class="meta">Glue • Lambda • S3 • Redshift • PySpark</div>
+          <p>Built batch pipelines processing daily claims, automated data quality checks, and published curated tables to Redshift for BI.</p>
+          <div class="tags">
+            <span class="tag">ETL/ELT</span>
+            <span class="tag">Data Quality</span>
+            <span class="tag">Analytics</span>
+          </div>
+          <p class="note">Add links: <a href="#">GitHub</a> · <a href="#">Architecture</a> · <a href="#">Dashboard</a></p>
+        </article>
+        <article class="card">
+        <h4>Real-time Fraud Detection Pipeline for Online Payments</h4>
+          <div class="meta">Big Query • Pub/Sub • DataFlow • Databricks • Power BI</div>
+          <p>Engineered ingestion from multiple sources into Synapse, designed validation with PySpark, and delivered KPIs in Power BI.</p>
+          <div class="tags">
+            <span class="tag">Ingestion</span>
+            <span class="tag">PySpark</span>
+            <span class="tag">Visualization</span>
+          </div>
+          <p class="note">Add links: <a href="#">GitHub</a> · <a href="#">Readme</a></p>
+        </article>
+      </div>
+      <p class="note">Replace or duplicate cards above for each project. Keep titles action‑oriented and add proof links.</p>
+    </section>
+
+    <section id="experience">
+      <div class="section-title"><h3>Experience</h3></div>
+      <div class="grid cols-2">
+        <div class="card">
+          <h4>Data Engineer — CVS Health</h4>
+          <div class="meta">Oct 2023 – Present · AWS, Glue, Lambda, S3, Redshift, Airflow, Databricks, Tableau/QuickSight</div>
+          <ul>
+            <li>Built AWS ETL pipelines with Glue/Lambda/S3 to streamline claims processing and speed analytics access.</li>
+            <li>Integrated sources into Redshift; improved data readiness by ~40% for analytics teams.</li>
+            <li>Automated data quality checks with Python & PySpark across ETL stages.</li>
+            <li>Delivered leadership dashboards (QuickSight/Tableau) with ~30% faster KPI insight.</li>
+            <li>Implemented governance & security aligned to HIPAA; introduced Delta Lake patterns on Databricks.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Junior Data Engineer — Tech Mahindra</h4>
+          <div class="meta">Nov 2018 – Aug 2021 · ADF, Synapse, ADLS, Databricks, Airflow, SQL, SSIS, Power BI</div>
+          <ul>
+            <li>Engineered end‑to‑end ADF pipelines and ingestion into Synapse; increased analytics availability by ~40%.</li>
+            <li>Designed validations with PySpark/Python; optimized notebooks for ~25% better performance.</li>
+            <li>Implemented monitoring via Azure Monitor & Log Analytics to reduce downtime by ~20%.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-title"><h3>Skills</h3></div>
+      <div class="skills">
+        <div class="card skill-card">
+          <h5>Cloud & Warehouses</h5>
+          <p>AWS, Azure, GCP, Redshift, Synapse, BigQuery, Snowflake</p>
+        </div>
+        <div class="card skill-card">
+          <h5>Data Engineering</h5>
+          <p>Python, PySpark, Airflow, Glue, Databricks, Kafka, DBT, Talend, Informatica</p>
+        </div>
+        <div class="card skill-card">
+          <h5>Analytics & BI</h5>
+          <p>SQL, Tableau, Power BI, QuickSight</p>
+        </div>
+        <div class="card skill-card">
+          <h5>DevOps</h5>
+          <p>GitHub, Docker, Kubernetes, Terraform, Jenkins</p>
+        </div>
+        <div class="card skill-card">
+          <h5>ML & Stats (Foundations)</h5>
+          <p>Supervised/Unsupervised, NLP, Time‑series, TensorFlow, PyTorch</p>
+        </div>
+        <div class="card skill-card">
+          <h5>Methods</h5>
+          <p>Agile, Scrum, SDLC</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="section-title"><h3>Education</h3></div>
+      <div class="card">
+        <p><strong>M.S., Computer Science</strong> — Rivier University, Nashua, NH (Jan 2022 – Aug 2023)</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-title"><h3>Contact</h3></div>
+      <div class="card">
+        <p>Email: <a href="mailto:tejeswarvempalli3@gmail.com">tejeswarvempalli3@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/tejeswar-vempalli/" target="_blank" rel="noreferrer">linkedin.com/in/tejeswarvempalli</a> <!-- TODO: replace with your exact LinkedIn URL --></p>
+        <div class="socials">
+          <a href="https://github.com/TejeswarRaju/GCP-DataEngineering-Projects">GitHub</a>
+          <a href="Tejeswar_Raju_Vempalli_Resume.pdf" target="_blank" rel="noreferrer">Resume (PDF)</a>
+
+        </div>
+        <p class="note">Tip: Replace placeholders above with your real links.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container" style="padding:0">
+        © <span id="year"></span> Tejeswar Raju Vempalli · Built with HTML & CSS · Hosted on GitHub Pages
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
